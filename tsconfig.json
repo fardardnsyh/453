@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Default",
+	"compilerOptions": {
+		"composite": false,
+		"declaration": true,
+		"declarationMap": true,
+		"forceConsistentCasingInFileNames": true,
+		"inlineSources": false,
+		"isolatedModules": true,
+		"moduleResolution": "node",
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"preserveWatchOutput": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"rootDir": ".",
+		"outDir": "dist",
+		"baseUrl": ".",
+		"allowSyntheticDefaultImports": true,
+		"allowJs": false,
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"target": "ESNext",
+		"noEmit": true,
+		"esModuleInterop": false,
+		"allowImportingTsExtensions": true,
+		"paths": {
+			"@/*": ["./src/*"],
+			"@/public/*": ["./public/*"]
+		},
+
+		"types": ["unplugin-icons/types/react", "@testing-library/react"]
+	},
+	"include": ["src", "@testing-library/jest-dom"],
+	"exclude": ["dist", "build", "node_modules"]
+}
